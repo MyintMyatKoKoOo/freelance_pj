@@ -1,0 +1,50 @@
+#booking_summary{
+	border: 1px solid gray;
+	padding: 20px;
+	width: 450px;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+#booking_summary h4{
+	margin-left: 10px;
+}
+#booking_summary ul{
+	list-style: none;
+}
+#booking_summary ul li{
+	margin-bottom: 10px;
+}
+#list1{
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+#list1 li:last-child{
+ margin-left: 32px;
+}
+#list1 svg{
+	margin-right: 15px;
+	color: #d9534f;
+}
+#list2{
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+#list2 svg{
+	margin-right: 15px;
+	color: #d9534f;
+}
+#list3{
+	padding: 10px;
+	
+}
+#list3 svg{
+	margin-right: 15px;
+	color: #d9534f;
+}
+#bksbtn{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	margin:10px auto 0px auto;
+}

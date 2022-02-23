@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transfer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script  src="js/jquery.min.js"></script>
+    <script  src="js/bootstrap.min.js"></script>
+  </head>
+  <style type="text/css">
+    .active_link{
+      color: orange;
+    }
+    body{
+      background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+    .booking_form{
+      background: #fff;
+      border-radius: 5px;
+    }
+    .book_my_transfer{
+      padding-top: 0px;
+    }
+  .navbar-toggle{
+  z-index: 1000;
+  /*background: #ecec !important;*/
+  }
+  .navbar-toggle>span{
+  background: red;
+  }
+  .navbar {
+  background: #fff !important;
+  }
+  .dropdown-toggle{
+  z-index: 100;
+  }
+  </style>
+  <body>
+    <!-- <nav class="navbar navbar-fixed-top" style="border-radius:0px;">
+      <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">TRANSFERS</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle active_link" data-toggle="dropdown" href="#">Transfers
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a type="button" class="btn btn-sm btn-danger" style="padding-top: 10px;padding-bottom: 10px;">Book My Transfer</a></li>
+            </ul>
+          </div>
+        </nav> -->
+        <nav class="navbar navbar-dark navbar-fixed-top" style="border-radius:0px;">
+          <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">TRANSFERS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transfers <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Transfers</a></li>
+                    <li><a href="#">Transfers</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinations <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Destinations</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a type="button" href="book_transfer.html" class="btn btn-sm btn-danger" style="padding-top: 10px;padding-bottom: 10px;">Book My Transfer</a></li>
+              </ul>
+              </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <div class="container body-context" style="padding-bottom: 20px;margin-top: 60px;">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <div class="row">
+                    <h1 class="col-md- 12 text-center">Palma Airport Transfers</h1>
+                    <div class="col-md-4">&nbsp;</div>
+                    <div style="color: gray" class="col-md-4 text-center">Get to where you need to go with fast, comfortable, and convenient transport.</div>
+                  </div><br><br>
+                  <div class="row">
+                    <div class="col-md-4">&nbsp;</div>
+                    <div class="col-md-4 booking_form">
+                      <form action="book_transfer.html">
+                        <div class="col-md-12 form-group">
+                          <label for="from_location left">FROM</label>
+                          <input type="text" class="form-control" id="from_location">
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <label for="to_location">TO</label>
+                          <input type="text" class="form-control" id="to_location">
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label for="to_location">DEPART</label>
+                          <input type="date" class="form-control" id="from_date" data-date-format="d-m-yyyy" placeholder="When?">
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label for="to_location">RETURN </label>&nbsp;<span style="color:gray;font-size: 12px;">(Optional)</span>
+                          <input type="date" class="form-control" id="return_date" laceholder="When?">
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label for="to_location">PASSENGERS</label><br/>
+                          <span style="color:gray;font-size: 12px;">Including kids and infacts</span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <input type="number" class="form-control" id="to_location" min=0 >
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <button class="btn btn-danger col-md-12 btn-block btn-lg">Book My Transfer</button>
+                        </div>
+                        <div class="col-md-12 form-group text-center">
+                          <label>Book now in just 3 minutes</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        </html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transfer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bt.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="intl-tel-input-17.0.0/build/css/intlTelInput.min.css">
+    <script  src="js/jquery.min.js"></script>
+    <script  src="js/bootstrap2.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="booking_summary">
+              <h4>Booking Summary</h4>
+              <ul id="list1">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>
+                Palama Airport</li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                <li>1 h 30 min,90 miles</li>
+              </ul>
+              <ul id="list2">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>
+                Palama Airport</li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                  </svg>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>1 h 30 min,90 miles</li>
+                </ul>
+                <ul id="list3">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>Charges Break-up</li>
+                  <li>
+                    <div class="d-flex">
+                      <div>
+                        1 Booking Seat
+                      </div>
+                      <div>
+                        Free
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div>
+                        1 Booking Seat
+                      </div>
+                      <div>
+                        Free
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div>
+                        1 Booking Seat
+                      </div>
+                      <div>
+                        Free
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <a href="booking_success.html" style="text-decoration: none"><button type="" class="btn-danger btn" id="bksbtn">Confirm Booking</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav id="nav" class="d-flex p-2">
+      
+      <ul class="p-2">
+        <li>
+          <a href="index.html" title=""> <img src="images/pg.jpg" alt="" width="30px" height="30px">
+          </a>
+        </li>
+      </ul>
+      <h4 class="p-2" style="font-weight:600 ">Transfers</h4>
+    </nav>
+
+    <div id="book_transfer" class="container">
+      <div class="bgwave mt-5 ">
+        <img src="images/ws.png" alt="" id="bgwave__img" >
+      </div>
+      <div class="row m-0 ">
+        <div class="col-lg-6 p-5">
+          <h1 class="mb-3" style="font-weight: 600">Book Transfer</h1>
+          <div class="wrap ">
+            <div id="step1">
+              <h5 class="" id="btheader">Pick Details</h5>
+              <p id="step1__parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore.</p>
+              <div id="form">
+                <label id="form__text">FROM</label>
+                <input type="text" class="form-control" name="" value="">
+              </div>
+              <div id="form">
+                <label id="form__text">TO</label>
+                <input type="text" class="form-control" name="" value="">
+              </div>
+              <div class="row">
+                <div class="col-md-6" id="form">
+                  <label id="form__text">DEPART</label>
+                  <input type="date" class="form-control" id="from_date" data-date-format="d-m-yyyy" placeholder="When?">
+                </div>
+                <div class="col-md-6" id="form">
+                  <label id="form__text">RETURN <span style="opacity: 0.3;">(Optional)</span> </label>
+                  <input type="date" class="form-control" id="from_date" data-date-format="d-m-yyyy" placeholder="When?">
+                </div>
+              </div>
+              <div class="row " id="form">
+                <div class="word col-6 my-2">
+                  <b>Pessengers</b>
+                  <p style="opacity: 0.6;">Including kids and infants</p>
+                </div>
+                <div class="inputnum col-6 my-2">
+                  <div id="inputnumbox" class="pull-right">
+                    <span id="minus">-</span>
+                    <span id="num">1</span>
+                    <span id="plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <b>Travelling With Kids?</b>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pull-right pl-4" id="twkr_wrap">
+                    <input type="radio" name="" id="twkr"><label>Yes</label>
+                    <input type="radio" name="" id="twkr"><label>No</label>
+                  </div>
+                </div>
+              </div>
+              <p id="step1__pag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+              <div class="row">
+                <div class="col-sm-3 col-6 mb-3 text-left" id="bt_box">
+                  <span id="bt__box-free">Free</span>
+                  <span id="bt__box-cnt">Maxicosi</span>
+                  <span id="bt__box-age">Age 0-1</span>
+                  <div id="inputnumbox">
+                    <span id="plus">+</span>
+                    <span id="num">1</span>
+                    <span id="minus">-</span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-6 mb-3 text-left" id="bt_box">
+                  <span id="bt__box-free">Free</span>
+                  <span id="bt__box-cnt">Maxicosi</span>
+                  <span id="bt__box-age">Age 0-1</span>
+                  <div id="inputnumbox">
+                    <span id="plus">+</span>
+                    <span id="num">1</span>
+                    <span id="minus">-</span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-6 mb-3 text-left" id="bt_box">
+                  <span id="bt__box-free">Free</span>
+                  <span id="bt__box-cnt">Maxicosi</span>
+                  <span id="bt__box-age">Age 0-1</span>
+                  <div id="inputnumbox">
+                    <span id="plus">+</span>
+                    <span id="num">1</span>
+                    <span id="minus">-</span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-6 mb-3 text-left" id="bt_box">
+                  <span id="bt__box-free">Free</span>
+                  <span id="bt__box-cnt">Maxicosi</span>
+                  <span id="bt__box-age">Age 0-1</span>
+                  <div id="inputnumbox">
+                    <span id="plus">+</span>
+                    <span id="num">1</span>
+                    <span id="minus">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="step2">
+              <h5 id="btheader">Pick Details</h5>
+              <p id="step2__parag2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div id="form">
+                <label id="form__text">Select Flight</label>
+                <input type="text" class="form-control" name="" value="">
+              </div>
+            <span id="span_text">Enter Air Flight</label>
+            <div class="row" id="step2__space">
+              <div class="box1 col-sm-3 col-6 mb-2">
+                <span>Flight</span>
+                <span>02:15pm</span>
+              </div>
+              <div class="box1 col-sm-3 col-6 mb-2">
+                <span>Pickup Time</span>
+                <span>02:15pm</span>
+              </div>
+              <div class="box1 col-sm-3 col-6 mb-2">
+                <span>Flight</span>
+                <span>02:15pm</span>
+              </div>
+            </div>
+          </div>
+          <div id="step3">
+            <h5 id="btheader">Contact Information</h5>
+            <p id="step3__parag3">Enter your contact details to stay in touch.</p>
+            <div id="form">
+              <label id="form__text">NAME</label>
+              <input type="text" class="form-control" name="" value="">
+            </div>
+            <div id="form">
+              <label id="form__text">EMAIL</label>
+              <input type="text" class="form-control" name="" value="">
+            </div>
+            <div id="form">
+              <label id="form__text" class="d-block">PHONE NUMBER</label>
+              <input type="tel" id="phone" class="form-control">
+            </div>
+            <div id="step3__space" class="row mt-3 py-2 px-3">
+              <div class="col-sm-6 mt-3">
+                <b>Free SMS Verification</b>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+              <div class="col-sm-6 mt-3">
+                <button type="" class="btn verbtn">Number Verfiied</button>
+              </div>
+            </div>
+          </div>
+          <div id="step4">
+            <h5 id="btheader">Choose Your Preferred Payment Model</h5>
+            <div id="form" class="row">
+              <div class="col-sm-6 mb-2">
+                <input type="radio" id="prd" name=""><label for="">Cards</label>
+                <span id="radspan">Save 50%</span>
+              </div>
+              <div class="col-sm-6 mb-2">
+                <img src="images/vsi.png" alt="" width="30px;">
+                <img src="images/ms.png" alt="" width="30px;">
+              </div>
+              
+              
+            </div>
+            <div id="form" class="row">
+              <div class="col-sm-6 mb-2">
+                <input type="radio" id="prd" name=""><label for="">Payments</label><span id="radspan">Save 50%</span>
+              </div>
+              <div class="col-sm-6 mb-2">
+                <img src="images/pi.png" alt="" width="30px;">
+              </div>
+              
+            </div>
+            <div id="form" class="row">
+              <div class="col-6">
+                <input type="radio" id="prd" name=""><label for="">Paylater</label>
+              </div>
+              
+              <p id="plp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+          <div id="step5" class="m-5">
+            <div id="form">
+              <label>MESSAGE FOR DRIVER</label>
+              <textarea name="" class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+        </div>
+        <div id="btbtn">
+          <div class="col-md-12">
+            <span>Total Price <b>$55</b></span>
+            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Review and Book</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 px-5 py-3" id="bk2">
+        <div id="booking_summary">
+          <h4 style="font-weight: 550">Booking Summary</h4>
+          <ul id="list1">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+            Palama Airport</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+            Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>1 h 30 min,90 miles</li>
+          </ul>
+          <ul id="list2">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+            Palama Airport</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+              </svg>
+            Passenger - 2</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>1 h 30 min,90 miles</li>
+            </ul>
+            <ul id="list3">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>Palama Airport</li>
+              <li class="px-5">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    1 Booking Seat
+                  </div>
+                  <div>
+                    <span style="color:#49f1d2">Free</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    Transfer
+                  </div>
+                  <div>
+                    $45
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <b>Total</b>
+                  </div>
+                  <div>
+                    <b>$55</b>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="booking_success.html" style="text-decoration: none"><button type="" class="btn-danger btn" id="bksbtn">Confirm Booking</button></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer id="copyright" class="py-4  text-center" style="opacity: 0.6;border-top: 1px solid gray;">
+      &copy;
+      2020 All Right Reversed
+    </footer>
+    <script src="intl-tel-input-17.0.0/build/js/intlTelInput.min.js"></script>
+    <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+    // any initialisation options go here
+    });
+    </script>
+  </body>
+</html>
